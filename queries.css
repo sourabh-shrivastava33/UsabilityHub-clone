@@ -1,0 +1,219 @@
+@media (max-width: 64em) {
+	html {
+		font-size: 56.25%;
+	}
+	.logo {
+		gap: 0.3rem;
+	}
+	.main-logo {
+		width: 128px;
+		aspect-ratio: 168px / 31px;
+		height: 23.6px;
+	}
+	.become-tester {
+		font-size: 1rem;
+		padding: 5px 7.5px;
+	}
+
+	.nav-list {
+		gap: 1.8rem;
+	}
+	.features-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.features {
+		background-size: auto 80%;
+		background-position: center;
+	}
+	.big-feature-heading {
+		font-size: 2.4rem;
+	}
+	.big-feature-heading {
+		letter-spacing: 0.7px;
+	}
+	.cta-list-head {
+		font-size: 1.8rem;
+	}
+	.list-flex > ul li {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 52em) {
+	.main-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition: all 0.5s ease-in;
+		pointer-events: none;
+		visibility: hidden;
+	}
+
+	.mobile-nav-button {
+		display: block;
+	}
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+	/* .nav-open .mobile-nav-icon [name="menu-outline"] {
+		display: none;
+	} */
+	.nav-open .mobile-nav-icon[name="close-outline"] {
+		/* position: absolute; */
+		display: block;
+	}
+	.nav-open .mobile-nav-icon[name="menu-outline"] {
+		display: none;
+	}
+
+	.main-nav > ul,
+	.nav-btns {
+		flex-direction: column;
+		gap: 4.8rem;
+		/* font-size: 3.2rem; */
+	}
+	.nav-link:link,
+	.nav-link:visited,
+	.nav-btn-1,
+	.nav-btn-2 {
+		font-size: 2.4rem;
+	}
+	.hero-grid {
+		grid-template-columns: 1fr;
+		gap: 6.4rem;
+	}
+	.hero-img-box {
+		grid-row: 1;
+	}
+	/* .heading-1,
+	.hero-text {
+		text-align: center;
+	} */
+	.hero-text-box {
+		/* margin: 0 auto; */
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 6.4rem 0;
+	}
+	.company-list {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.company-list > li:last-child {
+		grid-column: 2;
+	}
+	.company-text {
+		margin-bottom: 4.8rem;
+	}
+	.features {
+		background-image: none;
+	}
+	.features-container {
+		grid-template-columns: 1fr;
+		margin-top: 8rem;
+	}
+	.big-featured-grid {
+		gap: 2rem;
+	}
+	.big-feature-text-box {
+		padding: 0;
+	}
+	.example-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.cta-grid {
+		grid-template-columns: 1fr;
+	}
+	.list-flex > ul li {
+		font-size: 1.6rem;
+	}
+	.cta-image-box {
+		grid-row: 1;
+	}
+}
+
+@media (max-width: 38em) {
+	html {
+		font-size: 50%;
+	}
+	.big-featured-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 64px;
+	}
+	.cta-section {
+		padding: 0 2.4rem;
+	}
+	.cta-text-box {
+		display: flex;
+		flex-direction: column;
+	}
+	.example-container {
+		grid-template-columns: 1fr;
+	}
+	.footer-header {
+		display: flex;
+		flex-direction: column;
+		margin: 0 2.4rem;
+	}
+	.link-logo-contact {
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 75px repeat(3, 1fr);
+		align-items: center;
+		justify-items: center;
+		gap: 48px;
+	}
+	.footer-head {
+		margin-bottom: 16px;
+	}
+	.footer-list {
+		gap: 8px;
+	}
+	.Methodologies,
+	.Resources,
+	.Product {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.footer-logo {
+		width: 150px;
+		height: auto;
+	}
+	.footer-head {
+		font-size: 2.4rem;
+	}
+	.footer-list-link:link,
+	.footer-list-link:visited {
+		font-size: 1.8rem;
+	}
+	.footer-btn {
+		padding: 12px 24px;
+	}
+	.big-feature-flex {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.sub-footer-container {
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+	.big-feature-text-box {
+		margin-bottom: 9.6rem;
+	}
+}
